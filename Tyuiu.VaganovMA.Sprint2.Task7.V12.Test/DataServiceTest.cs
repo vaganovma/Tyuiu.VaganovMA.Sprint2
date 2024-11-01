@@ -13,11 +13,11 @@ public class DataServiceTest
     {
         DataService ds = new DataService();
 
-        double x = 1;
-        double y = 2;
+        double x = 0.1;
+        double y = 0;
 
         bool res = ds.CheckDotInShadedArea(x, y);
-        bool wait = false;
+        bool wait = true;
 
         Assert.AreEqual(wait, res);
         
