@@ -8,8 +8,8 @@ set group=ИИПб-24-2
 set name=VaganovMA
 
 set sprint=2
-set task=6
-set variant=5
+set task=7
+set variant=12
 
 set template=%prefix%.%name%.Sprint%sprint%
 set filename_template=%template%.Task%task%.V%variant%
@@ -54,6 +54,7 @@ echo class Program >> %console_class%
 echo { >> %console_class%
 echo     static void Main(string[] args) >> %console_class%
 echo     { >> %console_class%
+echo         DataService ds = new DataService();>> %console_class%
 echo         Console.Title = "Спринт #%sprint% | Выполнил: %fio% | %group%"; >> %console_class%
 echo         Console.WriteLine("************************************************************************"); >> %console_class%
 echo         Console.WriteLine("* Спринт #%sprint%                                                            *"); >> %console_class%
@@ -69,7 +70,7 @@ echo         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                
 echo         Console.WriteLine("************************************************************************"); >> %console_class%
 echo. >> %console_class%
 echo         Console.WriteLine("Введите переменную X:"); >> %console_class%
-echo         int x = int.Parse(Console.ReadLine()!); >> %console_class%
+echo         double x = Convert.ToDouble(Console.ReadLine()); >> %console_class%
 echo         Console.WriteLine("Введите переменную Y:"); >> %console_class%
 echo         int y = int.Parse(Console.ReadLine()!); >> %console_class%
 echo. >> %console_class%
@@ -84,6 +85,8 @@ echo } >> %console_class%
 :: Создаём шаблон для библиотеки классов
 del %classlib_path%\Class1.cs
 set classlib_class=%classlib_path%\DataService.cs
+echo namespace Tyuiu.RotachAO.Sprint%sprint%.Task%task%.V%variant%; >> %console_class%
+echo. >> %console_class%
 echo namespace %classlib_path%; >> %classlib_class%
 echo. >> %classlib_class%
 echo using tyuiu.cources.programming.interfaces.Sprint%sprint%; > %classlib_class%

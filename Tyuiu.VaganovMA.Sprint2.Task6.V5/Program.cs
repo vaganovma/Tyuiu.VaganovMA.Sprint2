@@ -13,8 +13,8 @@ class Program
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* Спринт #2                                                               *");
         Console.WriteLine("* Тема: Базовые                                                           *");
-        Console.WriteLine("* Задание #6                                                              *");
-        Console.WriteLine("* Вариант #5                                                              *");
+        Console.WriteLine("* Задание #7                                                              *");
+        Console.WriteLine("* Вариант #12                                                             *");
         Console.WriteLine("* Выполнил: Ваганов Михаил Алексеевич | ИИПБ-24-2                         *");
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
