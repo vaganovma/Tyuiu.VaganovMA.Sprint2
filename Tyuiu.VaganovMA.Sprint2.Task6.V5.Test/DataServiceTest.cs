@@ -10,7 +10,7 @@ public class DataServiceTest
 {
     [TestMethod]
     public void ValidExpression()
-    {
+    { 
         DataService ds = new DataService();
 
         Assert.AreEqual("шестерка ", ds.FindCardValue(6));
