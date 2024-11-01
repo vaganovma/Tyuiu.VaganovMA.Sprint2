@@ -19,7 +19,7 @@ public class DataServiceTest
         Assert.AreEqual("девятка ", ds.FindCardValue(9));
         Assert.AreEqual("десятка ", ds.FindCardValue(10));
         Assert.AreEqual("валет ", ds.FindCardValue(11));
-        Assert.AreEqual("дама ", ds.FindCardValue(12));
+        Assert.AreEqual("дама", ds.FindCardValue(12));
         Assert.AreEqual("король ", ds.FindCardValue(13));
         Assert.AreEqual("туз ", ds.FindCardValue(14));
 

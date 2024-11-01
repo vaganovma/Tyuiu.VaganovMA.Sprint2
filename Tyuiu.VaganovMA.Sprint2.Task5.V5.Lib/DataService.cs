@@ -29,7 +29,7 @@ public class DataService : ISprint2Task5V5
                 res=("валет ");
                 break;
             case 12:
-                res = ("дама ");
+                res = ("дама");
                 break;
             case 13:
                 res = ("король ");
